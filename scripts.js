@@ -37,7 +37,7 @@ function displayResults (data) {
   hiLow.innerText = `${Math.round(data.main.temp_max)}°F / ${Math.round(data.main.temp_min)}°F`;
 
   // Banner
-  if (data.weather[0].main === 'Rain' || data.weather[0].main === 'Snow') {
+  if (data.weather[0].main === 'Rain' || data.weather[0].main === 'Snow' || data.weather[0].main === 'Mist') {
     document.getElementById("banner").style.display = "block";
   }
 
