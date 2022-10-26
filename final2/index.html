@@ -6,21 +6,21 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="Weather application and website made for mobile to provide a simple layout. Created for WDD330 at Brigham Young 
   University - Idaho.">
-  <title>Weather Website App</title>
+  <title>Weather</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <aside id="banner">
-    Remember to Drive Safely! &nbsp;<button id="close">&#x274C;</button>
+    Drive Safely! Roads may be slick! &nbsp;<button id="close">&#x274C;</button>
   </aside>
   <img src="images/moon.png" id="icon" alt="Click For Light/Dark Mode">
   <header>
-    <input type="text" class="search-box" placeholder="Search for a city...">
+    <input type="text" class="search-box" id="search-box" placeholder="Search for a city...">
   </header>
   <main>
     <section class="location">
       <div class="city">Getting Location</div>
-      <div class="date">Date Here</div>
+      <div class="date">Date</div>
     </section>
     <div class="current">
       <div class="temp">0<span>°F</span></div>
@@ -29,52 +29,9 @@
     </div>
     <div class="fiveDay">
       <input type="checkbox" id="dropdown1">
-      <label for="dropdown1">5 Day Forecast</label>
+      <label onclick="getFiveDayResults()" for="dropdown1">5 Day Forecast</label>
         <div class="content">
-          <section class="fiveDayForecast">
-            <ul class="multiDay">
-              <hr>
-              <li>
-                <span class="day"></span>
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
-                <span class="temp">
-                  <span class="hi">--</span><span class="lo">--</span>
-                </span>
-              </li>
-              <hr>
-              <li>
-                <span class="day"></span>
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
-                <span class="temp">
-                  <span class="hi">--</span><span class="lo">--</span>
-                </span>
-              </li>
-              <hr>
-              <li>
-                <span class="day"></span>
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
-                <span class="temp">
-                  <span class="hi">--</span><span class="lo">--</span>
-                </span>
-              </li>
-              <hr>
-              <li>
-                <span class="day"></span>
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
-                <span class="temp">
-                  <span class="hi">--</span><span class="lo">--</span>
-                </span>
-              </li>
-              <hr>
-              <li>
-                <span class="day"></span>
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
-                <span class="temp">
-                  <span class="hi">--</span><span class="lo">--</span>
-                </span>
-              </li>
-              <hr>
-            </ul>
+          <section id="fiveDayForecast"class="fiveDayForecast">
           </section>
         </div>
       </div>

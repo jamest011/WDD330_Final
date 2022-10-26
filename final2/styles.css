@@ -209,19 +209,6 @@
     border: none;
   }
 
-  .fiveDayForecast .forecast {
-    height: initial;
-    overflow: auto;
-  }
-
-  .multiDay {
-    margin-top: 1rem;
-  }
-
-  .multiDay * {
-    font-size: 1.25rem;
-  }
-
 
 /* GRID LAYOUT */
   .multiDay li {
@@ -234,16 +221,4 @@
   
   .fiveDayForecast .temp {
     justify-self: end;
-  }
-
-  .lo {
-    color: gray;
-  }
-
-  .lo::before {
-    content: ' ';
-  }
-
-  .lo::after, .hi::after, .todays-forecast {
-    content: '°';
   }
