@@ -93,6 +93,7 @@ let displayWeatherDay = function(dayOfWeek, icon, highTemp, lowTemp) {
   let out = "<span class='day'>" + dayOfWeek + "</span>";
   out += "<div class='weatherDay'><img src='http://openweathermap.org/img/wn/" + icon + "@2x.png'>";
   out += "<p>" + Math.round(highTemp) + "°F / " + Math.round(lowTemp) + "°F</p>";
+  out += "<hr></hr>";
   document.getElementById("fiveDayForecast").innerHTML += out;
 }
 
